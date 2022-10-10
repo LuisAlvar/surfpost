@@ -14,7 +14,6 @@ public class Followers
   /// 
   /// </summary>
   /// <value></value>
-  [Required]
   [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
   public Guid FollowershipId { get; set; }
 

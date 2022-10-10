@@ -8,7 +8,6 @@ public class User
   [Key]
   public int Id { get; set; }
 
-  [Required]
   [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
   public Guid UserId { get; set; }
 

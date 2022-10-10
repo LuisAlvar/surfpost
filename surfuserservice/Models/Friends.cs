@@ -14,7 +14,6 @@ public class Friends
   /// 
   /// </summary>
   /// <value></value>
-  [Required]
   [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
   public Guid FriendshipId { get; set; }
 

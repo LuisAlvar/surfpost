@@ -11,7 +11,6 @@ public class Following
     [Key]
     public int Id { get; set; }
 
-    [Required]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]    
     public Guid FollowingshipId { get; set; }
 
