@@ -9,6 +9,7 @@ public class User
   public int Id { get; set; }
 
   [Required]
+  [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
   public Guid UserId { get; set; }
 
   [Required]
@@ -30,9 +31,11 @@ public class User
   public DateTime LastActive { get; set; }
 
   [Required]
+  [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
   public DateTime CreateDate { get; set; }
 
   [Required]
+  [DatabaseGenerated(DatabaseGeneratedOption.Computed)]
   public DateTime LastUpdateDate { get; set; }
 
   [Required]

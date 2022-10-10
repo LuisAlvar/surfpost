@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 public class Friends 
 {
@@ -13,6 +14,8 @@ public class Friends
   /// 
   /// </summary>
   /// <value></value>
+  [Required]
+  [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
   public Guid FriendshipId { get; set; }
 
   /// <summary>

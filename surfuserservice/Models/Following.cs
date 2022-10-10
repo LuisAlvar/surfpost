@@ -1,4 +1,6 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 
 public class Following 
 {
@@ -9,7 +11,8 @@ public class Following
     [Key]
     public int Id { get; set; }
 
-    
+    [Required]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]    
     public Guid FollowingshipId { get; set; }
 
     /// <summary>
